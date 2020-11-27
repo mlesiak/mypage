@@ -25,7 +25,7 @@ function createContent(querySelectorContent, content) {
     element.innerHTML = content;
 }
 
-createContent('.main__header--js', 'Siema');
+createContent('.main__header--js', 'Ten nagłówek wypełniłem funkcją z innerHTML w JavaScript');
 
 
 const greet = (age, firstName) => {

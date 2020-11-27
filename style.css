@@ -15,6 +15,9 @@ body {
   background-color: #c1dbb3;
   margin: 10px;
   padding: 8px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navigation__button--home {
@@ -43,7 +46,6 @@ body {
   width: 400px;
   height: 300px;
   border: 3px solid #fe5d26;
-  display: inline-block;
   margin: 30px;
   text-align: left;
   padding: 8px;
@@ -51,7 +53,9 @@ body {
 }
 
 .main__section {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer {
