@@ -8,48 +8,42 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a class="navigation-button" href="index.html">Strona domowa</a>
-        <a class="navigation-button" href="nauka-html.html">Nauka html</a>
-        <a class="navigation-button" href="nauka-css.html">Nauka css</a>
-        <a class="navigation-button" href="nauka-js.html">Nauka js</a>
+      <nav class="navigation">
+        <a class="navigation__button navigation__button--home" href="index.html">Strona domowa</a>
+        <a class="navigation__button" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__button" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__button" href="nauka-js.html">Nauka js</a>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <header>
-        <h1>Michał Lesiak - strona domowa</h1>
+        <h1 class="main__header">Michał Lesiak - strona domowa</h1>
+        <h2 class="main__header--js">Bleble</h2>
       </header>
 
       <section>
         <h2>Kim jestem?</h2>
-        <img src="comp.jpg" alt="komputer">
         <p><strong>Jestem inżynierem budownictwa</strong>, na codzień pracuję jako
-        handlowiec w branży budowlanej.<a href="#notatki">Przejdź do notatek</a></p>
+          handlowiec w branży budowlanej.</p>
+        <img class="main__picture" src="comp.jpg" alt="komputer">
       </section>
 
-      <section id="notatki">
+      <section class="main__section">
         <h2>NOTATKI Z WTF: CO TEN FRONT END</h2>
-        <article>
+        <article class="main__article">
           <h3>Dlaczego uczę się front endu?</h3>
-          <p>
-            Prawdopodobnie w przyszłym roku czeka mnie zmiana zawodowa o której
-            myślę <em>od dłuższego czasu</em>. Branża IT wydaje mi się na
-            tyle<br />
-            atrakcyjna, że postanowiłem, iż prawdopodobnie będę chciał się w
-            niej sprawdzić
-          </p>
+          <p>Branża IT wydaje mi się bardzo atrakcyjna i chcę się w niej spróbować</p>
         </article>
-        <article>
+        <article class="main__article">
           <h3>Jakie plany co do szkolenia?</h3>
-          <p>
-            Do końca listopada planuję przerobićjeszcze raz materiał który
-            poznałem wiosną, oby się udało
-            <a href="http://cotenfrontend.pl">WTF</a>
-          </p>
+          <p>Do końca listopada mam nadzieję ponownie przerobić materiał, który przerobiłem przed przerwą wakacyjną</p>
         </article>
+
+
+
       </section>
     </main>
-    <footer>Strona domowa Michała Lesiaka</footer>
+    <footer class="footer">Strona domowa Michała Lesiaka</footer>
     <script src="main.js"></script>
   </body>
 </html>

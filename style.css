@@ -1,15 +1,63 @@
 body {
-    background: #FAEDCA;
+  background: #faedca;
 }
 
-.navigation-button {
-    color: #FE5D26;
-    font-weight: bold;
-    background-color: #C1DBB3;
-    margin: 10px;
-    padding: 8px;
+.navigation {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
+.navigation__button {
+  color: #fe5d26;
+  font-weight: bold;
+  background-color: #c1dbb3;
+  margin: 10px;
+  padding: 8px;
+}
+
+.navigation__button--home {
+  background-color: #fe5d26;
+  color: #faedca;
+}
+
+.main {
+  background-color: #c1dbb3;
+  max-width: 1000px;
+  min-height: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.main__header {
+  color: #fe5d26;
+}
+
+.main__picture {
+  height: 300px;
+}
+
+.main__article {
+  background: #faedca;
+  width: 400px;
+  height: 300px;
+  border: 3px solid #fe5d26;
+  display: inline-block;
+  margin: 30px;
+  text-align: left;
+  padding: 8px;
+
+}
+
+.main__section {
+    text-align: center;
+}
+
+.footer {
+  width: 1000px;
+  font-weight: bold;
+}
 
 /* kolory :
  FE5D26
