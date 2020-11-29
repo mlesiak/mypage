@@ -1,23 +1,38 @@
 const name = 'Michał';
 const age = 29;
 
+alert(`Witaj odwiedzający, nazywam się ${name}, a to jest moja strona!`)
 
 
-alert('Siema Wszystkim!');
 
-console.log(`Cześć, nazywam się ${name} i mam ${age} lat. Witam na mojej stronie`)
+// function calculate(myNumber) {
+//     console.log(`Dostałam ${myNumber}`);
+//     return myNumber*7
+// }
 
+// calculate(age);
 
-function calculate(myNumber) {
-    console.log(`Dostałam ${myNumber}`);
-    return myNumber*7
+const greet = (age, name) => {
+    console.log(`Witaj odwiedzający, nazywam się ${name} i mam ${age} lat`)
 }
 
-const myResult = calculate(age);
-console.log(age);
+greet(age, name);
 
 
-console.log(myResult);
+// function greet(age, name) {
+//     console.log(`Witaj odwiedzający, nazywam się ${name} i mam ${age} lat`)
+// }
+
+// greet(age, name);
+
+
+
+
+// const myResult = calculate(age);
+// console.log(age);
+
+
+// console.log(myResult);
 
 function createContent(querySelectorContent, content) {
     const element = document.querySelector(querySelectorContent);
@@ -28,9 +43,41 @@ function createContent(querySelectorContent, content) {
 createContent('.main__header--js', 'Ten nagłówek wypełniłem funkcją z innerHTML w JavaScript');
 
 
-const greet = (age, firstName) => {
-    console.log(`Witaj odwiedzający, nazywam się ${firstName} i mam ${age} lat`)
+// const greet = (age, firstName) => {
+//     console.log(`Witaj odwiedzający, nazywam się ${firstName} i mam ${age} lat`)
 
+// }
+
+// // greet(29, `Michał`);
+
+const humanOne = {
+    name: 'Maciek',
+    age: 32
 }
 
-greet(29, `Michał`);
+const humanTwo = {
+    name: 'Stefan',
+    age: humanOne.age
+};
+
+humanOne.age = 32
+
+console.log(humanTwo);
+console.log(humanOne);
+
+
+
+
+
+
+if ('Java' != 'Javascript') {
+    console.log('Java to nie Javascript')
+}
+
+if (humanOne.age < humanTwo.age) {
+    console.log('HumanOne jest młodszy!');
+} else if (humanOne.age === humanTwo.age) {
+    console.log('Są równolatkami!');
+} else {
+    console.log('HumanOne jest starszy!')
+}
