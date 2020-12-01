@@ -1,9 +1,7 @@
-const name = 'Michał';
+const name = "Michał";
 const age = 29;
 
-alert(`Witaj odwiedzający, nazywam się ${name}, a to jest moja strona!`)
-
-
+alert(`Witaj odwiedzający, nazywam się ${name}, a to jest moja strona!`);
 
 // function calculate(myNumber) {
 //     console.log(`Dostałam ${myNumber}`);
@@ -13,11 +11,10 @@ alert(`Witaj odwiedzający, nazywam się ${name}, a to jest moja strona!`)
 // calculate(age);
 
 const greet = (age, name) => {
-    console.log(`Witaj odwiedzający, nazywam się ${name} i mam ${age} lat`)
-}
+  console.log(`Witaj odwiedzający, nazywam się ${name} i mam ${age} lat`);
+};
 
 greet(age, name);
-
 
 // function greet(age, name) {
 //     console.log(`Witaj odwiedzający, nazywam się ${name} i mam ${age} lat`)
@@ -25,23 +22,21 @@ greet(age, name);
 
 // greet(age, name);
 
-
-
-
 // const myResult = calculate(age);
 // console.log(age);
-
 
 // console.log(myResult);
 
 function createContent(querySelectorContent, content) {
-    const element = document.querySelector(querySelectorContent);
+  const element = document.querySelector(querySelectorContent);
 
-    element.innerHTML = content;
+  element.innerHTML = content;
 }
 
-createContent('.main__header--js', 'Ten nagłówek wypełniłem funkcją z innerHTML w JavaScript');
-
+createContent(
+  ".main__header--js",
+  "Ten nagłówek wypełniłem funkcją z innerHTML w JavaScript"
+);
 
 // const greet = (age, firstName) => {
 //     console.log(`Witaj odwiedzający, nazywam się ${firstName} i mam ${age} lat`)
@@ -51,33 +46,41 @@ createContent('.main__header--js', 'Ten nagłówek wypełniłem funkcją z inner
 // // greet(29, `Michał`);
 
 const humanOne = {
-    name: 'Maciek',
-    age: 32
-}
-
-const humanTwo = {
-    name: 'Stefan',
-    age: humanOne.age
+  name: "Maciek",
+  age: 32,
 };
 
-humanOne.age = 32
+const humanTwo = {
+  name: "Stefan",
+  age: humanOne.age,
+};
+
+humanOne.age = 32;
 
 console.log(humanTwo);
 console.log(humanOne);
 
-
-
-
-
-
-if ('Java' != 'Javascript') {
-    console.log('Java to nie Javascript')
+if ("Java" != "Javascript") {
+  console.log("Java to nie Javascript");
 }
 
 if (humanOne.age < humanTwo.age) {
-    console.log('HumanOne jest młodszy!');
+  console.log("HumanOne jest młodszy!");
 } else if (humanOne.age === humanTwo.age) {
-    console.log('Są równolatkami!');
+  console.log("Są równolatkami!");
 } else {
-    console.log('HumanOne jest starszy!')
+  console.log("HumanOne jest starszy!");
+}
+
+const myNubmer = 3;
+
+switch (myNubmer) {
+  case 7:
+    console.log("Jestem siódemką");
+    break;
+  case 9:
+    console.log("Jestem dziewiątką");
+    break;
+  default:
+    console.log("Jestem czymś innym!");
 }
