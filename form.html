@@ -17,15 +17,18 @@
         </nav>
       </header>
       <main class="main-form">
-    <form class="form">
+    <form method="post" action="https:/dev.cotenfrontend.pl" class="form">
         <h1 >TAKI TAM FORMULARZ</h1>
       <p>
         <label
-          >Podaj Imię <input class="form-item" type="text" id="firstName" name="firstName"
+          >Podaj Imię <input required class="form-item" type="text" id="firstName" name="firstName"
         /></label>
       </p>
       <p>
         <label>Podaj Nazwisko <input class="form-item" id="lastName" name="lastName" /></label>
+      </p>
+      <p>
+        <label>Podaj name <input class="form-item" id="name" name="name" /></label>
       </p>
       <p>
         <label
@@ -96,8 +99,13 @@
             checked
             name="agreement"
             value="agree"
-          />Zgadzam się</label
-        >
+          />Zgadzam się</label>
+
+
+      </p>
+
+      <p>
+        <input name="submit" type="submit" value="Send" />
       </p>
     </form>
 </main>
